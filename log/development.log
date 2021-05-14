@@ -1,0 +1,828 @@
+  [1m[35m (13.2ms)[0m  [1m[35mCREATE DATABASE `hellofresh_backend_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE DATABASE `hellofresh_backend_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (28.0ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  [1m[35m (14.0ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('4700275493704225575', 0)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateRecipes (20210514125921)
+  [1m[35m (16.3ms)[0m  [1m[35mCREATE TABLE `recipes` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `ingredients` text NOT NULL, `instruction` text NOT NULL, `image` varchar(255) DEFAULT 'https://raw.githubusercontent.com/do-community/react_rails_recipe/master/app/assets/images/Sammy_Meal.jpg', `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20210514125921')[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (9.9ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2021-05-14 13:01:50.970026', '2021-05-14 13:01:50.970026')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('4700275493704225575')[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mRecipe Load (1.8ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes`[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (1.6ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 1', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-14 13:08:22.295413', '2021-05-14 13:08:22.295413')[0m
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (1.1ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 2', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-14 13:08:22.301081', '2021-05-14 13:08:22.301081')[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 3', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-14 13:08:22.303618', '2021-05-14 13:08:22.303618')[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 4', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-14 13:08:22.305765', '2021-05-14 13:08:22.305765')[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 5', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-14 13:08:22.307447', '2021-05-14 13:08:22.307447')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 6', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-14 13:08:22.309151', '2021-05-14 13:08:22.309151')[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 7', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-14 13:08:22.311252', '2021-05-14 13:08:22.311252')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 8', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-14 13:08:22.312893', '2021-05-14 13:08:22.312893')[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.7ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 9', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-14 13:08:22.315203', '2021-05-14 13:08:22.315203')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`id` ASC LIMIT 1[0m
+Started GET "/recipes/index" for ::1 at 2021-05-14 23:14:21 +1000
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (2.0ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:4:in `index'
+Completed 200 OK in 62ms (Views: 9.8ms | ActiveRecord: 34.2ms | Allocations: 9231)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-14 23:15:42 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:4:in `index'
+Completed 200 OK in 96ms (Views: 8.5ms | ActiveRecord: 85.9ms | Allocations: 5343)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-14 23:21:28 +1000
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/recipes_controller.rb:2:in `<class:RecipesController>'
+app/controllers/recipes_controller.rb:1:in `<main>'
+Started GET "/recipes/index" for ::1 at 2021-05-14 23:22:15 +1000
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/recipes_controller.rb:2:in `<class:RecipesController>'
+app/controllers/recipes_controller.rb:1:in `<main>'
+Started GET "/recipes/index" for ::1 at 2021-05-14 23:22:32 +1000
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/recipes_controller.rb:2:in `<class:RecipesController>'
+app/controllers/recipes_controller.rb:1:in `<main>'
+Started GET "/recipes/index" for ::1 at 2021-05-14 23:23:20 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 81ms (Views: 4.2ms | ActiveRecord: 67.0ms | Allocations: 6524)
+
+
+Started GET "/recipes/show" for ::1 at 2021-05-14 23:47:00 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/recipes/show"):
+  
+Started GET "/recipes/show" for ::1 at 2021-05-14 23:50:32 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/recipes/show"):
+  
+Started GET "/recipes/index" for ::1 at 2021-05-14 23:52:24 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (15.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 97ms (Views: 15.8ms | ActiveRecord: 26.1ms | Allocations: 1783)
+
+
+Started GET "/recipes/show" for ::1 at 2021-05-14 23:52:29 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/recipes/show"):
+  
+Started GET "/recipes/index" for ::1 at 2021-05-14 23:54:00 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 104ms (Views: 9.8ms | ActiveRecord: 89.6ms | Allocations: 6106)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-14 23:54:22 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.4ms | Allocations: 1685)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-14 23:54:49 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.6ms | Allocations: 1684)
+
+
+Started GET "/recipes/show" for ::1 at 2021-05-14 23:54:52 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/recipes/show"):
+  
+Started GET "/recipes/index" for ::1 at 2021-05-14 23:54:59 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (12.8ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 16ms (Views: 2.9ms | ActiveRecord: 12.8ms | Allocations: 1683)
+
+
+Started GET "/recipes/show" for ::1 at 2021-05-14 23:55:40 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/recipes/show"):
+  
+Started GET "/recipes/show/9" for ::1 at 2021-05-15 00:00:03 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mRecipe Load (42.0ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 9 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 61ms (Views: 0.4ms | ActiveRecord: 42.0ms | Allocations: 2170)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 00:00:08 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.9ms | Allocations: 1673)
+
+
+Started GET "/recipes/show/9" for ::1 at 2021-05-15 00:00:11 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mRecipe Load (9.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 9 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 12ms (Views: 0.5ms | ActiveRecord: 9.4ms | Allocations: 604)
+
+
+Started GET "/recipes/show/9" for ::1 at 2021-05-15 00:00:26 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mRecipe Load (1.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 9 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 8ms (Views: 1.0ms | ActiveRecord: 1.5ms | Allocations: 606)
+
+
+Started GET "/recipes/show/9" for ::1 at 2021-05-15 00:03:38 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mRecipe Load (27.9ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 9 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 29ms (Views: 0.3ms | ActiveRecord: 27.9ms | Allocations: 604)
+
+
+Started GET "/recipes/show/9" for ::1 at 2021-05-15 00:06:18 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mRecipe Load (14.1ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 9 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 14.1ms | Allocations: 604)
+
+
+Started GET "/recipes/show/9" for ::1 at 2021-05-15 00:08:28 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mRecipe Load (24.8ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 9 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 38ms (Views: 4.1ms | ActiveRecord: 24.8ms | Allocations: 604)
+
+
+Started GET "/recipes/show/9" for ::1 at 2021-05-15 00:08:28 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mRecipe Load (13.7ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 9 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 22ms (Views: 0.9ms | ActiveRecord: 13.7ms | Allocations: 604)
+
+
+Started GET "/recipes/show/9" for ::1 at 2021-05-15 00:10:00 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mRecipe Load (38.2ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 9 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 48ms (Views: 5.9ms | ActiveRecord: 38.2ms | Allocations: 604)
+
+
+Started GET "/recipes/show/9" for ::1 at 2021-05-15 00:11:09 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 9 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 604)
+
+
+Started GET "/recipes/show/9" for ::1 at 2021-05-15 00:12:14 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mRecipe Load (29.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 9 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 35ms (Views: 1.3ms | ActiveRecord: 29.3ms | Allocations: 604)
+
+
+Started GET "/recipes/show/9" for ::1 at 2021-05-15 00:12:27 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 9 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 604)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 00:12:44 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (17.0ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 38ms (Views: 14.4ms | ActiveRecord: 17.0ms | Allocations: 1674)
+
+
+Started GET "/recipes/show/3" for ::1 at 2021-05-15 00:13:33 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 604)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 00:13:40 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.5ms | Allocations: 1673)
+
+
+Started GET "/recipes/show/7" for ::1 at 2021-05-15 00:13:42 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 604)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 00:13:44 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (5.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 12ms (Views: 5.8ms | ActiveRecord: 5.5ms | Allocations: 1673)
+
+
+Started GET "/recipes/show/5" for ::1 at 2021-05-15 00:13:47 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mRecipe Load (3.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 3.5ms | Allocations: 604)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 00:13:49 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (41.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 47ms (Views: 5.1ms | ActiveRecord: 41.3ms | Allocations: 1673)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 00:15:30 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (1.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 1.4ms | Allocations: 1673)
+
+
+Started GET "/recipes/show/9" for ::1 at 2021-05-15 00:15:59 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 9 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.7ms | Allocations: 604)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 00:16:39 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (21.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 31ms (Views: 8.7ms | ActiveRecord: 21.4ms | Allocations: 1674)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 00:17:51 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (8.0ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 13ms (Views: 4.2ms | ActiveRecord: 8.0ms | Allocations: 1673)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 00:18:10 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (1.7ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 1.7ms | Allocations: 1673)
+
+
+Started GET "/recipes/show/8" for ::1 at 2021-05-15 06:03:59 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mRecipe Load (21.1ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 8 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 393ms (Views: 3.0ms | ActiveRecord: 38.8ms | Allocations: 715)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 06:04:10 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (14.2ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 21ms (Views: 6.1ms | ActiveRecord: 14.2ms | Allocations: 1673)
+
+
+Started GET "/recipes/show/3" for ::1 at 2021-05-15 06:04:15 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 53ms (Views: 0.8ms | ActiveRecord: 0.4ms | Allocations: 605)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 06:04:18 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.5ms | Allocations: 1673)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 06:04:48 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (10.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 23ms (Views: 12.0ms | ActiveRecord: 10.5ms | Allocations: 1674)
+
+
+Started GET "/recipes/show/1" for ::1 at 2021-05-15 06:06:04 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (13.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 17ms (Views: 1.5ms | ActiveRecord: 13.3ms | Allocations: 604)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 06:06:08 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (6.7ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 13ms (Views: 5.8ms | ActiveRecord: 6.7ms | Allocations: 1673)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 06:06:18 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.9ms | Allocations: 1673)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 06:23:04 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (10.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 67ms (Views: 12.6ms | ActiveRecord: 19.7ms | Allocations: 1785)
+
+
+Started GET "/recipes/show/5" for ::1 at 2021-05-15 06:23:08 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mRecipe Load (4.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 10ms (Views: 0.8ms | ActiveRecord: 4.5ms | Allocations: 604)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 06:23:58 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.6ms | Allocations: 1673)
+
+
+Started GET "/recipes/show/8" for ::1 at 2021-05-15 06:24:01 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mRecipe Load (8.1ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 8 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 8.1ms | Allocations: 604)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 06:25:11 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (55.8ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 62ms (Views: 5.4ms | ActiveRecord: 55.8ms | Allocations: 1673)
+
+
+Started GET "/recipes/show/8" for ::1 at 2021-05-15 06:25:17 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 8 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.6ms | Allocations: 604)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 06:25:20 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (6.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 14ms (Views: 6.9ms | ActiveRecord: 6.6ms | Allocations: 1673)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 06:26:55 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (17.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 24ms (Views: 4.9ms | ActiveRecord: 17.6ms | Allocations: 1673)
+
+
+Started GET "/recipes/show/8" for ::1 at 2021-05-15 06:26:58 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 8 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.7ms | Allocations: 604)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 06:27:02 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (8.9ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 14ms (Views: 4.0ms | ActiveRecord: 8.9ms | Allocations: 1673)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 06:37:54 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (8.8ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 62ms (Views: 13.2ms | ActiveRecord: 15.4ms | Allocations: 1785)
+
+
+Started GET "/recipes/show/1" for ::1 at 2021-05-15 06:37:59 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (5.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 5.5ms | Allocations: 604)
+
+
+Started DELETE "/recipes/destroy/1" for ::1 at 2021-05-15 06:38:01 +1000
+Processing by RecipesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+  [1m[36mTRANSACTION (9.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/recipes_controller.rb:27:in `destroy'
+  [1m[36mRecipe Destroy (29.0ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 1[0m
+  ↳ app/controllers/recipes_controller.rb:27:in `destroy'
+  [1m[36mTRANSACTION (13.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/recipes_controller.rb:27:in `destroy'
+Completed 200 OK in 82ms (Views: 1.0ms | ActiveRecord: 53.3ms | Allocations: 2047)
+
+
+Started DELETE "/recipes/destroy/1" for ::1 at 2021-05-15 06:38:03 +1000
+Processing by RecipesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (5.9ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 404 Not Found in 13ms (ActiveRecord: 5.9ms | Allocations: 526)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Recipe with 'id'=1):
+  
+app/controllers/recipes_controller.rb:38:in `recipe'
+app/controllers/recipes_controller.rb:27:in `destroy'
+  [1m[36mRecipe Load (1.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 1 LIMIT 1[0m
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes`[0m
+Started GET "/recipes/index" for ::1 at 2021-05-15 06:39:26 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.4ms | Allocations: 1558)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 06:39:38 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (3.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 2.0ms | ActiveRecord: 3.6ms | Allocations: 1559)
+
+
+Started GET "/recipes/show/2" for ::1 at 2021-05-15 06:39:42 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (2.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 2.6ms | Allocations: 604)
+
+
+Started DELETE "/recipes/destroy/2" for ::1 at 2021-05-15 06:39:46 +1000
+Processing by RecipesController#destroy as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/recipes_controller.rb:27:in `destroy'
+  [1m[36mRecipe Destroy (6.0ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 2[0m
+  ↳ app/controllers/recipes_controller.rb:27:in `destroy'
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/recipes_controller.rb:27:in `destroy'
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 10.1ms | Allocations: 1878)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 06:39:53 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.6ms | Allocations: 1445)
+
+
+Started GET "/recipes/show/3" for ::1 at 2021-05-15 06:42:37 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRecipe Load (12.0ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 27ms (Views: 1.2ms | ActiveRecord: 12.0ms | Allocations: 604)
+
+
+Started DELETE "/recipes/destroy/3" for ::1 at 2021-05-15 06:42:41 +1000
+Processing by RecipesController#destroy as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRecipe Load (5.2ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/recipes_controller.rb:27:in `destroy'
+  [1m[36mRecipe Destroy (12.5ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 3[0m
+  ↳ app/controllers/recipes_controller.rb:27:in `destroy'
+  [1m[36mTRANSACTION (10.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/recipes_controller.rb:27:in `destroy'
+Completed 200 OK in 44ms (Views: 0.4ms | ActiveRecord: 32.2ms | Allocations: 1878)
+
+
+Started GET "/recipes/show/3" for ::1 at 2021-05-15 06:43:46 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRecipe Load (43.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 404 Not Found in 47ms (ActiveRecord: 43.5ms | Allocations: 506)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Recipe with 'id'=3):
+  
+app/controllers/recipes_controller.rb:38:in `recipe'
+app/controllers/recipes_controller.rb:19:in `show'
+Started GET "/recipes/index" for ::1 at 2021-05-15 06:43:50 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (17.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 21ms (Views: 3.1ms | ActiveRecord: 17.3ms | Allocations: 1330)
+
+
+Started GET "/recipes/show/4" for ::1 at 2021-05-15 06:43:56 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 604)
+
+
+Started DELETE "/recipes/destroy/4" for ::1 at 2021-05-15 06:43:59 +1000
+Processing by RecipesController#destroy as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRecipe Load (3.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/recipes_controller.rb:27:in `destroy'
+  [1m[36mRecipe Destroy (9.7ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 4[0m
+  ↳ app/controllers/recipes_controller.rb:27:in `destroy'
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/recipes_controller.rb:27:in `destroy'
+Completed 200 OK in 26ms (Views: 0.2ms | ActiveRecord: 17.9ms | Allocations: 1878)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 06:43:59 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.6ms | Allocations: 1217)
+
+
+Started POST "/recipes/create" for ::1 at 2021-05-15 06:59:25 +1000
+Processing by RecipesController#create as HTML
+  Parameters: {"name"=>"Test", "ingredients"=>"butter, salt, bread, eggs", "instruction"=>"Throw in pan and fry", "recipe"=>{"name"=>"Test", "ingredients"=>"butter, salt, bread, eggs", "instruction"=>"Throw in pan and fry"}}
+[31mUnpermitted parameter: :recipe[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/recipes_controller.rb:10:in `create'
+  [1m[36mRecipe Create (17.1ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Test', 'butter, salt, bread, eggs', 'Throw in pan and fry', '2021-05-14 20:59:25.516578', '2021-05-14 20:59:25.516578')[0m
+  ↳ app/controllers/recipes_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/recipes_controller.rb:10:in `create'
+Completed 200 OK in 74ms (Views: 1.3ms | ActiveRecord: 22.7ms | Allocations: 2343)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 06:59:25 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.6ms | Allocations: 1331)
+
+
+Started GET "/recipes/show/10" for ::1 at 2021-05-15 06:59:32 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mRecipe Load (6.2ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 10 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 6.2ms | Allocations: 603)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 06:59:47 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.5ms | Allocations: 1330)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 07:00:02 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (7.1ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 14ms (Views: 6.6ms | ActiveRecord: 7.1ms | Allocations: 1330)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 07:03:30 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (6.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 17ms (Views: 4.2ms | ActiveRecord: 6.6ms | Allocations: 1330)
+
+
+Started GET "/recipes/show/9" for ::1 at 2021-05-15 07:03:33 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mRecipe Load (9.1ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 9 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 14ms (Views: 0.5ms | ActiveRecord: 9.1ms | Allocations: 604)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 07:03:37 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (6.2ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 14ms (Views: 7.7ms | ActiveRecord: 6.2ms | Allocations: 1330)
+
+
+Started GET "/recipes/show/8" for ::1 at 2021-05-15 07:03:41 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 8 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.4ms | Allocations: 604)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 07:03:45 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.5ms | Allocations: 1330)
+
+
+Started GET "/recipes/show/10" for ::1 at 2021-05-15 07:03:47 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 10 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 1.1ms | Allocations: 603)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 07:03:50 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (24.7ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 29ms (Views: 3.9ms | ActiveRecord: 24.7ms | Allocations: 1330)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 07:06:45 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (5.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 16ms (Views: 9.9ms | ActiveRecord: 5.3ms | Allocations: 1330)
+
+
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (5.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT GET_LOCK('4700275493704225575', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateRecipes (20210514125921)
+  [1m[35m (99.3ms)[0m  [1m[35mDROP TABLE `recipes`[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (5.7ms)[0m  [1m[31mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20210514125921'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('4700275493704225575')[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('4700275493704225575', 0)[0m
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateRecipes (20210514125921)
+  [1m[35m (73.9ms)[0m  [1m[35mCREATE TABLE `recipes` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `ingredients` text NOT NULL, `instruction` text NOT NULL, `image` varchar(255) DEFAULT 'https://res.cloudinary.com/dhl1cdqch/image/upload/v1621026603/Sammy_Meal_bvckqd.jpg', `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20210514125921')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.0ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('4700275493704225575')[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mRecipe Load (1.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes`[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.4ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 1', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-14 21:11:41.030006', '2021-05-14 21:11:41.030006')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.9ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 2', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-14 21:11:41.032496', '2021-05-14 21:11:41.032496')[0m
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (1.0ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 3', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-14 21:11:41.036006', '2021-05-14 21:11:41.036006')[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 4', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-14 21:11:41.039227', '2021-05-14 21:11:41.039227')[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (1.0ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 5', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-14 21:11:41.040824', '2021-05-14 21:11:41.040824')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 6', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-14 21:11:41.043535', '2021-05-14 21:11:41.043535')[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 7', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-14 21:11:41.045151', '2021-05-14 21:11:41.045151')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.6ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 8', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-14 21:11:41.053125', '2021-05-14 21:11:41.053125')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 9', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-14 21:11:41.055416', '2021-05-14 21:11:41.055416')[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/recipes/index" for ::1 at 2021-05-15 07:11:49 +1000
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 29ms (Views: 8.0ms | ActiveRecord: 16.9ms | Allocations: 6053)
+
+
+Started GET "/recipes/show/9" for ::1 at 2021-05-15 07:12:01 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 9 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.9ms | Allocations: 750)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 07:12:07 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.7ms | Allocations: 1673)
+
+
+Started GET "/recipes/show/2" for ::1 at 2021-05-15 07:12:09 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.8ms | Allocations: 605)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 07:12:19 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (1.2ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 6ms (Views: 3.0ms | ActiveRecord: 1.2ms | Allocations: 1673)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 07:12:26 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.4ms | Allocations: 1673)
+
+
+Started GET "/recipes/show/6" for ::1 at 2021-05-15 07:12:36 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/recipes_controller.rb:38:in `recipe'
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 0.9ms | Allocations: 604)
+
+
+Started GET "/recipes/index" for ::1 at 2021-05-15 07:12:40 +1000
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`created_at` DESC[0m
+  ↳ app/controllers/recipes_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.8ms | Allocations: 1673)
+
+
