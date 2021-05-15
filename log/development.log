@@ -13714,3 +13714,1900 @@ Processing by WeeksController#index as HTML
 Completed 200 OK in 77ms (Views: 59.3ms | ActiveRecord: 17.3ms | Allocations: 9905)
 
 
+Started GET "/weeks/index/1" for ::1 at 2021-05-16 08:07:00 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mWeek Load (0.6ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 0[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (6.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 60[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 59[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 58[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 57[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 56[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 55[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 44ms (Views: 32.5ms | ActiveRecord: 11.1ms | Allocations: 9903)
+
+
+Started GET "/weeks/index/1" for ::1 at 2021-05-16 08:07:02 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mWeek Load (2.0ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 0[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (5.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 60[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (1.7ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 59[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (6.7ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 58[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 57[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 56[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 55[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 53ms (Views: 33.1ms | ActiveRecord: 18.8ms | Allocations: 9904)
+
+
+Started GET "/weeks/index/2" for ::1 at 2021-05-16 08:07:03 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mWeek Load (0.5ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 6[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (5.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 54[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 53[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (3.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 52[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 51[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 34ms (Views: 20.6ms | ActiveRecord: 11.8ms | Allocations: 6873)
+
+
+Started GET "/weeks/index/1" for ::1 at 2021-05-16 08:07:06 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mWeek Load (0.5ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 0[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 60[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 59[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 58[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 57[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 56[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (1.2ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 55[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 37ms (Views: 30.2ms | ActiveRecord: 5.9ms | Allocations: 9903)
+
+
+Started GET "/weeks/index/2" for ::1 at 2021-05-16 08:07:07 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mWeek Load (1.0ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 6[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 54[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 53[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (1.2ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 52[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 51[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 25ms (Views: 18.4ms | ActiveRecord: 5.6ms | Allocations: 6873)
+
+
+Started GET "/weeks/index/1" for ::1 at 2021-05-16 08:07:08 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mWeek Load (0.5ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 0[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (6.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 60[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (2.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 59[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 58[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 57[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 56[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 55[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 35ms (Views: 22.8ms | ActiveRecord: 11.3ms | Allocations: 9903)
+
+
+Started GET "/weeks/index/2" for ::1 at 2021-05-16 08:07:09 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mWeek Load (0.4ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 6[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (7.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 54[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 53[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 52[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 51[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 28ms (Views: 16.6ms | ActiveRecord: 10.5ms | Allocations: 6873)
+
+
+Started GET "/weeks/index/1" for ::1 at 2021-05-16 08:07:10 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mWeek Load (0.5ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 0[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 60[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 59[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 58[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 57[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 56[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 55[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 31ms (Views: 24.9ms | ActiveRecord: 5.8ms | Allocations: 9904)
+
+
+Started GET "/weeks/index/1" for ::1 at 2021-05-16 08:07:21 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mWeek Load (0.5ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 0[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 60[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 59[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 58[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 57[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 56[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 55[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 30ms (Views: 24.6ms | ActiveRecord: 4.8ms | Allocations: 9903)
+
+
+Started GET "/weeks/index/1" for ::1 at 2021-05-16 08:19:33 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mWeek Load (10.0ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 0[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (13.9ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 60[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 59[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 58[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (3.2ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 57[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 56[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 55[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 153ms (Views: 61.8ms | ActiveRecord: 47.5ms | Allocations: 10017)
+
+
+Started GET "/weeks/index/2" for ::1 at 2021-05-16 08:19:36 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mWeek Load (0.5ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 6[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (12.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 54[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 53[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 52[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 51[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 34ms (Views: 18.5ms | ActiveRecord: 15.1ms | Allocations: 6874)
+
+
+Started GET "/weeks/index/2" for ::1 at 2021-05-16 08:19:39 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mWeek Load (5.0ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 6[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (5.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 54[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 53[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (4.1ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 52[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 51[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 34ms (Views: 17.3ms | ActiveRecord: 15.8ms | Allocations: 6873)
+
+
+Started GET "/weeks/index/1" for ::1 at 2021-05-16 08:19:42 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mWeek Load (0.6ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 0[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 60[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 59[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 58[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 57[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 56[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (1.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 55[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 54ms (Views: 45.7ms | ActiveRecord: 7.2ms | Allocations: 9904)
+
+
+Started GET "/weeks/index/1" for ::1 at 2021-05-16 08:19:57 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mWeek Load (3.2ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 0[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 60[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (1.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 59[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 58[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 57[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 56[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 55[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 40ms (Views: 30.8ms | ActiveRecord: 8.3ms | Allocations: 9903)
+
+
+Started GET "/week/last" for ::1 at 2021-05-16 08:27:09 +1000
+Processing by WeeksController#last as HTML
+  [1m[36mWeek Load (6.8ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`id` DESC LIMIT 1[0m
+  ↳ app/controllers/weeks_controller.rb:32:in `last'
+Completed 200 OK in 35ms (Views: 0.5ms | ActiveRecord: 9.7ms | Allocations: 5759)
+
+
+Started GET "/week/last" for ::1 at 2021-05-16 08:30:34 +1000
+Started POST "/weeks/create" for ::1 at 2021-05-16 08:30:34 +1000
+Processing by WeeksController#last as HTML
+  
+ActionController::RoutingError (No route matches [POST] "/weeks/create"):
+  
+  [1m[36mWeek Load (0.5ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`id` DESC LIMIT 1[0m
+  ↳ app/controllers/weeks_controller.rb:32:in `last'
+Completed 200 OK in 38ms (Views: 0.4ms | ActiveRecord: 0.5ms | Allocations: 6683)
+
+
+Started POST "/weeks/create" for ::1 at 2021-05-16 08:31:28 +1000
+Started GET "/week/last" for ::1 at 2021-05-16 08:31:28 +1000
+Processing by WeeksController#create as HTML
+  Parameters: {"name"=>"The best week", "number"=>9, "week"=>{"number"=>9, "name"=>"The best week"}}
+[31mUnpermitted parameter: :week[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/weeks_controller.rb:10:in `create'
+  [1m[36mWeek Create (8.8ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (9, 'The best week', '2021-05-15 22:31:28.926024', '2021-05-15 22:31:28.926024')[0m
+  ↳ app/controllers/weeks_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (9.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/weeks_controller.rb:10:in `create'
+Completed 200 OK in 52ms (Views: 0.3ms | ActiveRecord: 139.0ms | Allocations: 4468)
+
+
+Processing by WeeksController#last as HTML
+  [1m[36mWeek Load (0.2ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`id` DESC LIMIT 1[0m
+  ↳ app/controllers/weeks_controller.rb:32:in `last'
+Started GET "/weeks/index/1" for ::1 at 2021-05-16 08:31:29 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"1"}
+Completed 200 OK in 64ms (Views: 0.2ms | ActiveRecord: 54.8ms | Allocations: 6028)
+
+
+  [1m[36mWeek Load (23.0ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 0[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (44.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (1.8ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 61[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 60[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 59[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 58[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (13.2ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 57[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 56[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 149ms (Views: 22.8ms | ActiveRecord: 106.8ms | Allocations: 18922)
+
+
+Started GET "/weeks/index/2" for ::1 at 2021-05-16 08:31:37 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mWeek Load (0.5ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 6[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 55[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 54[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 53[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 52[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 51[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 28ms (Views: 18.7ms | ActiveRecord: 8.0ms | Allocations: 8390)
+
+
+Started GET "/weeks/index/1" for ::1 at 2021-05-16 08:31:39 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mWeek Load (0.4ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 0[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 61[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 60[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 59[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 58[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 57[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 56[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 30ms (Views: 24.5ms | ActiveRecord: 5.4ms | Allocations: 9790)
+
+
+Started POST "/weeks/create" for ::1 at 2021-05-16 08:32:16 +1000
+Started GET "/week/last" for ::1 at 2021-05-16 08:32:16 +1000
+Processing by WeeksController#create as HTML
+Processing by WeeksController#last as HTML
+  Parameters: {"name"=>"The Worst Week", "number"=>"", "week"=>{"number"=>"", "name"=>"The Worst Week"}}
+[31mUnpermitted parameter: :week[0m
+  [1m[36mWeek Load (1.7ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`id` DESC LIMIT 1[0m
+  ↳ app/controllers/weeks_controller.rb:32:in `last'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/weeks_controller.rb:10:in `create'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 1.7ms | Allocations: 1231)
+
+
+  [1m[36mWeek Create (2.3ms)[0m  [1m[32mINSERT INTO `weeks` (`name`, `created_at`, `updated_at`) VALUES ('The Worst Week', '2021-05-15 22:32:16.125229', '2021-05-15 22:32:16.125229')[0m
+  ↳ app/controllers/weeks_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/weeks_controller.rb:10:in `create'
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 3.1ms | Allocations: 2952)
+
+
+Started GET "/weeks/index/1" for ::1 at 2021-05-16 08:32:16 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mWeek Load (0.4ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 0[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (6.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (7.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 62[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 61[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 60[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (5.1ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 59[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 58[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (1.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 57[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 55ms (Views: 30.6ms | ActiveRecord: 23.2ms | Allocations: 9677)
+
+
+Started POST "/weeks/create" for ::1 at 2021-05-16 08:33:02 +1000
+Processing by WeeksController#create as HTML
+  Parameters: {"name"=>"Another Week", "number"=>"", "week"=>{"number"=>"", "name"=>"Another Week"}}
+Started GET "/week/last" for ::1 at 2021-05-16 08:33:02 +1000
+[31mUnpermitted parameter: :week[0m
+Processing by WeeksController#last as HTML
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/weeks_controller.rb:10:in `create'
+  [1m[36mWeek Create (5.7ms)[0m  [1m[32mINSERT INTO `weeks` (`name`, `created_at`, `updated_at`) VALUES ('Another Week', '2021-05-15 22:33:02.664376', '2021-05-15 22:33:02.664376')[0m
+  [1m[36mWeek Load (6.1ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`id` DESC LIMIT 1[0m
+  ↳ app/controllers/weeks_controller.rb:10:in `create'
+  ↳ app/controllers/weeks_controller.rb:32:in `last'
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 6.1ms | Allocations: 1723)
+
+
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/weeks_controller.rb:10:in `create'
+Completed 200 OK in 20ms (Views: 0.4ms | ActiveRecord: 8.1ms | Allocations: 3172)
+
+
+Started GET "/weeks/index/1" for ::1 at 2021-05-16 08:33:02 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mWeek Load (9.9ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 0[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 63[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 62[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 61[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 60[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 59[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 58[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 45ms (Views: 28.3ms | ActiveRecord: 16.0ms | Allocations: 9564)
+
+
+Started GET "/week/last" for ::1 at 2021-05-16 08:35:57 +1000
+Processing by WeeksController#last as HTML
+  [1m[36mWeek Load (0.3ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`id` DESC LIMIT 1[0m
+  ↳ app/controllers/weeks_controller.rb:32:in `last'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 682)
+
+
+Started POST "/weeks/create" for ::1 at 2021-05-16 08:36:03 +1000
+Processing by WeeksController#create as HTML
+  Parameters: {"name"=>"Test again", "number"=>nil, "week"=>{"number"=>nil, "name"=>"Test again"}}
+[31mUnpermitted parameter: :week[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/weeks_controller.rb:10:in `create'
+  [1m[36mWeek Create (23.7ms)[0m  [1m[32mINSERT INTO `weeks` (`name`, `created_at`, `updated_at`) VALUES ('Test again', '2021-05-15 22:36:03.387165', '2021-05-15 22:36:03.387165')[0m
+  ↳ app/controllers/weeks_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (8.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/weeks_controller.rb:10:in `create'
+Completed 200 OK in 41ms (Views: 0.3ms | ActiveRecord: 32.6ms | Allocations: 1892)
+
+
+Started GET "/weeks/index/1" for ::1 at 2021-05-16 08:36:03 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mWeek Load (0.4ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 0[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (6.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 64[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 63[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (1.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 62[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 61[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 60[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 59[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 41ms (Views: 29.7ms | ActiveRecord: 10.4ms | Allocations: 9451)
+
+
+Started GET "/weeks/index/1" for ::1 at 2021-05-16 08:36:56 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mWeek Load (0.7ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 0[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (22.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 64[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 63[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 62[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 61[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 60[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 59[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 43ms (Views: 15.3ms | ActiveRecord: 26.3ms | Allocations: 9452)
+
+
+Started GET "/week/last" for ::1 at 2021-05-16 08:36:58 +1000
+Processing by WeeksController#last as HTML
+  [1m[36mWeek Load (1.3ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`id` DESC LIMIT 1[0m
+  ↳ app/controllers/weeks_controller.rb:32:in `last'
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 1.3ms | Allocations: 682)
+
+
+Started POST "/weeks/create" for ::1 at 2021-05-16 08:37:03 +1000
+Processing by WeeksController#create as HTML
+  Parameters: {"name"=>"Work now", "number"=>nil, "week"=>{"number"=>nil, "name"=>"Work now"}}
+[31mUnpermitted parameter: :week[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/weeks_controller.rb:10:in `create'
+  [1m[36mWeek Create (1.3ms)[0m  [1m[32mINSERT INTO `weeks` (`name`, `created_at`, `updated_at`) VALUES ('Work now', '2021-05-15 22:37:03.476604', '2021-05-15 22:37:03.476604')[0m
+  ↳ app/controllers/weeks_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/weeks_controller.rb:10:in `create'
+Completed 200 OK in 16ms (Views: 0.4ms | ActiveRecord: 4.5ms | Allocations: 1892)
+
+
+Started GET "/weeks/index/1" for ::1 at 2021-05-16 08:37:03 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mWeek Load (0.5ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 0[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (10.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 65[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 64[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 63[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 62[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (1.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 61[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 60[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 39ms (Views: 23.4ms | ActiveRecord: 14.5ms | Allocations: 9339)
+
+
+Started GET "/weeks/index/2" for ::1 at 2021-05-16 08:37:07 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mWeek Load (1.0ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 6[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 59[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (3.2ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 58[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 57[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 56[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (1.2ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 55[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 54[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 36ms (Views: 22.5ms | ActiveRecord: 12.7ms | Allocations: 9904)
+
+
+Started GET "/weeks/index/3" for ::1 at 2021-05-16 08:37:08 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[36mWeek Load (0.4ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 12[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (1.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 53[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 52[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 51[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 18ms (Views: 12.8ms | ActiveRecord: 4.1ms | Allocations: 5358)
+
+
+Started GET "/weeks/index/2" for ::1 at 2021-05-16 08:37:10 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mWeek Load (0.4ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 6[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 59[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 58[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 57[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 56[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 55[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 54[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 29ms (Views: 23.0ms | ActiveRecord: 5.1ms | Allocations: 9903)
+
+
+Started GET "/weeks/index/1" for ::1 at 2021-05-16 08:37:12 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mWeek Load (0.5ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 0[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 65[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 64[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 63[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 62[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 61[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 60[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 26ms (Views: 19.7ms | ActiveRecord: 5.2ms | Allocations: 9338)
+
+
+Started GET "/week/last" for ::1 at 2021-05-16 08:37:52 +1000
+Processing by WeeksController#last as HTML
+  [1m[36mWeek Load (0.3ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`id` DESC LIMIT 1[0m
+  ↳ app/controllers/weeks_controller.rb:32:in `last'
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 682)
+
+
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mRecipe Load (3.8ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes`[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (6.1ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 60[0m
+  [1m[36mRecipe Destroy (6.0ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 60[0m
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 61[0m
+  [1m[36mRecipe Destroy (2.3ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 61[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (0.9ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 62[0m
+  [1m[36mRecipe Destroy (0.1ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 62[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (0.3ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 63[0m
+  [1m[36mRecipe Destroy (0.1ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 63[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (0.9ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 64[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 64[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (0.3ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 65[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 65[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (0.7ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 66[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 66[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (0.7ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 67[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 67[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (0.7ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 68[0m
+  [1m[36mRecipe Destroy (0.1ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 68[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (1.2ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 69[0m
+  [1m[36mRecipe Destroy (0.3ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 69[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mWeek Load (3.9ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks`[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.1ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 51[0m
+  [1m[36mWeek Destroy (1.0ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 51[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.1ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 52[0m
+  [1m[36mWeek Destroy (0.8ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 52[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.1ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 53[0m
+  [1m[36mWeek Destroy (0.6ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 53[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 54[0m
+  [1m[36mWeek Destroy (0.7ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 54[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.1ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 55[0m
+  [1m[36mWeek Destroy (0.9ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 55[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.1ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 56[0m
+  [1m[36mWeek Destroy (1.0ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 56[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.7ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 57[0m
+  [1m[36mWeek Destroy (0.1ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 57[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.1ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 58[0m
+  [1m[36mWeek Destroy (0.6ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 58[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.3ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 59[0m
+  [1m[36mWeek Destroy (1.4ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 59[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 60[0m
+  [1m[36mWeek Destroy (1.2ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 60[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.1ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 61[0m
+  [1m[36mWeek Destroy (0.9ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 61[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.9ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 62[0m
+  [1m[36mWeek Destroy (0.9ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 62[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 63[0m
+  [1m[36mWeek Destroy (0.2ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 63[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 64[0m
+  [1m[36mWeek Destroy (1.0ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 64[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.1ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 65[0m
+  [1m[36mWeek Destroy (0.2ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 65[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (1.7ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 1', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-15 22:38:39.918221', '2021-05-15 22:38:39.918221')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 2', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-15 22:38:39.922142', '2021-05-15 22:38:39.922142')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (6.5ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 3', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-15 22:38:39.924292', '2021-05-15 22:38:39.924292')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (1.2ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 4', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-15 22:38:39.932641', '2021-05-15 22:38:39.932641')[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 5', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-15 22:38:39.935972', '2021-05-15 22:38:39.935972')[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 6', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-15 22:38:39.939027', '2021-05-15 22:38:39.939027')[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (2.3ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 7', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-15 22:38:39.940983', '2021-05-15 22:38:39.940983')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (1.5ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 8', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-15 22:38:39.945360', '2021-05-15 22:38:39.945360')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 9', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-15 22:38:39.948945', '2021-05-15 22:38:39.948945')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 10', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-15 22:38:39.951219', '2021-05-15 22:38:39.951219')[0m
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.2ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (0, 'A week name', '2021-05-15 22:38:39.954660', '2021-05-15 22:38:39.954660')[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.3ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (1, 'A week name', '2021-05-15 22:38:39.956749', '2021-05-15 22:38:39.956749')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.2ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (2, 'A week name', '2021-05-15 22:38:39.959206', '2021-05-15 22:38:39.959206')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.4ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (3, 'A week name', '2021-05-15 22:38:39.961514', '2021-05-15 22:38:39.961514')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.8ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (4, 'A week name', '2021-05-15 22:38:39.964087', '2021-05-15 22:38:39.964087')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.3ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (5, 'A week name', '2021-05-15 22:38:39.966925', '2021-05-15 22:38:39.966925')[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.2ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (6, 'A week name', '2021-05-15 22:38:39.969590', '2021-05-15 22:38:39.969590')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.9ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (7, 'A week name', '2021-05-15 22:38:39.972228', '2021-05-15 22:38:39.972228')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.3ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (8, 'A week name', '2021-05-15 22:38:39.975357', '2021-05-15 22:38:39.975357')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (1.1ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (9, 'A week name', '2021-05-15 22:38:39.977666', '2021-05-15 22:38:39.977666')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (4.7ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (70, 66)[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (0.1ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (71, 67)[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (0.7ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (72, 68)[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (0.4ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (73, 69)[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (0.3ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (74, 70)[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (0.3ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (75, 71)[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (0.8ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (76, 72)[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (1.1ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (77, 73)[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (0.9ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (78, 74)[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (0.4ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (79, 75)[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mWeek Load (0.3ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`id` ASC LIMIT 1[0m
+  [1m[36mCACHE Week Load (0.0ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `recipes`.`name` FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 66[0m
+  [1m[36mRecipe Load (5.1ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`id` DESC LIMIT 1[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `weeks`.`name` FROM `weeks` INNER JOIN `recipes_weeks` ON `weeks`.`id` = `recipes_weeks`.`week_id` WHERE `recipes_weeks`.`recipe_id` = 79[0m
+Started GET "/weeks/index/1" for ::1 at 2021-05-16 08:38:46 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mWeek Load (0.7ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 0[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 75[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 74[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 73[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 72[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (1.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 71[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 70[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 32ms (Views: 24.2ms | ActiveRecord: 6.7ms | Allocations: 9903)
+
+
+Started GET "/week/last" for ::1 at 2021-05-16 08:38:49 +1000
+Processing by WeeksController#last as HTML
+  [1m[36mWeek Load (0.6ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`id` DESC LIMIT 1[0m
+  ↳ app/controllers/weeks_controller.rb:32:in `last'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.6ms | Allocations: 682)
+
+
+Started POST "/weeks/create" for ::1 at 2021-05-16 08:38:58 +1000
+Processing by WeeksController#create as HTML
+  Parameters: {"name"=>"A new week", "number"=>nil, "week"=>{"number"=>nil, "name"=>"A new week"}}
+[31mUnpermitted parameter: :week[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/weeks_controller.rb:10:in `create'
+  [1m[36mWeek Create (1.4ms)[0m  [1m[32mINSERT INTO `weeks` (`name`, `created_at`, `updated_at`) VALUES ('A new week', '2021-05-15 22:38:58.379398', '2021-05-15 22:38:58.379398')[0m
+  ↳ app/controllers/weeks_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/weeks_controller.rb:10:in `create'
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 2.9ms | Allocations: 1888)
+
+
+Started GET "/weeks/index/1" for ::1 at 2021-05-16 08:38:58 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mWeek Load (1.0ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 0[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 76[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 75[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 74[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 73[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 72[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 71[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 26ms (Views: 19.6ms | ActiveRecord: 5.5ms | Allocations: 9790)
+
+
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mRecipe Load (2.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes`[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (7.3ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 70[0m
+  [1m[36mRecipe Destroy (6.1ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 70[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (0.8ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 71[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 71[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (0.1ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 72[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 72[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 73[0m
+  [1m[36mRecipe Destroy (0.1ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 73[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 74[0m
+  [1m[36mRecipe Destroy (0.1ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 74[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 75[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 75[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (0.1ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 76[0m
+  [1m[36mRecipe Destroy (0.1ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 76[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 77[0m
+  [1m[36mRecipe Destroy (0.1ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 77[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 78[0m
+  [1m[36mRecipe Destroy (0.3ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 78[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 79[0m
+  [1m[36mRecipe Destroy (0.1ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 79[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mWeek Load (4.5ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks`[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 66[0m
+  [1m[36mWeek Destroy (0.8ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 66[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.1ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 67[0m
+  [1m[36mWeek Destroy (0.2ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 67[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.1ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 68[0m
+  [1m[36mWeek Destroy (0.7ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 68[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.1ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 69[0m
+  [1m[36mWeek Destroy (0.7ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 69[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.3ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 70[0m
+  [1m[36mWeek Destroy (0.2ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 70[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 71[0m
+  [1m[36mWeek Destroy (0.9ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 71[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.1ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 72[0m
+  [1m[36mWeek Destroy (0.8ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 72[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.3ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 73[0m
+  [1m[36mWeek Destroy (0.9ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 73[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.1ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 74[0m
+  [1m[36mWeek Destroy (0.7ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 74[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 75[0m
+  [1m[36mWeek Destroy (1.1ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 75[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.3ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 76[0m
+  [1m[36mWeek Destroy (0.8ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 76[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (1.3ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 1', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-15 22:39:18.148046', '2021-05-15 22:39:18.148046')[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 2', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-15 22:39:18.152361', '2021-05-15 22:39:18.152361')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (1.0ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 3', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-15 22:39:18.154730', '2021-05-15 22:39:18.154730')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 4', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-15 22:39:18.157862', '2021-05-15 22:39:18.157862')[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.9ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 5', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-15 22:39:18.160583', '2021-05-15 22:39:18.160583')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.8ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 6', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-15 22:39:18.163464', '2021-05-15 22:39:18.163464')[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 7', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-15 22:39:18.167081', '2021-05-15 22:39:18.167081')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 8', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-15 22:39:18.169483', '2021-05-15 22:39:18.169483')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 9', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-15 22:39:18.171776', '2021-05-15 22:39:18.171776')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Recipe 10', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-15 22:39:18.174051', '2021-05-15 22:39:18.174051')[0m
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.3ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (0, 'A week name', '2021-05-15 22:39:18.177587', '2021-05-15 22:39:18.177587')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.2ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (1, 'A week name', '2021-05-15 22:39:18.179794', '2021-05-15 22:39:18.179794')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.3ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (2, 'A week name', '2021-05-15 22:39:18.182272', '2021-05-15 22:39:18.182272')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.3ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (3, 'A week name', '2021-05-15 22:39:18.184956', '2021-05-15 22:39:18.184956')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.2ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (4, 'A week name', '2021-05-15 22:39:18.187625', '2021-05-15 22:39:18.187625')[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.3ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (5, 'A week name', '2021-05-15 22:39:18.190620', '2021-05-15 22:39:18.190620')[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.3ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (6, 'A week name', '2021-05-15 22:39:18.193534', '2021-05-15 22:39:18.193534')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.2ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (7, 'A week name', '2021-05-15 22:39:18.196301', '2021-05-15 22:39:18.196301')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.2ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (8, 'A week name', '2021-05-15 22:39:18.198723', '2021-05-15 22:39:18.198723')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.6ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (9, 'A week name', '2021-05-15 22:39:18.201210', '2021-05-15 22:39:18.201210')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (0.1ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (80, 77)[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (0.2ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (81, 78)[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (0.4ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (82, 79)[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (0.2ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (83, 80)[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (0.2ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (84, 81)[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (0.4ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (85, 82)[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (0.2ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (86, 83)[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (1.0ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (87, 84)[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (0.1ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (88, 85)[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (0.1ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (89, 86)[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mWeek Load (0.3ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`id` ASC LIMIT 1[0m
+  [1m[36mCACHE Week Load (0.0ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `recipes`.`name` FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 77[0m
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`id` DESC LIMIT 1[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `weeks`.`name` FROM `weeks` INNER JOIN `recipes_weeks` ON `weeks`.`id` = `recipes_weeks`.`week_id` WHERE `recipes_weeks`.`recipe_id` = 89[0m
+Started GET "/weeks/index/1" for ::1 at 2021-05-16 08:39:22 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mWeek Load (1.3ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 0[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (92.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (2.2ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 86[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (1.7ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 85[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 84[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 83[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (8.0ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 82[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 81[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 117ms (Views: 8.7ms | ActiveRecord: 107.9ms | Allocations: 9903)
+
+
+Started GET "/week/last" for ::1 at 2021-05-16 08:39:25 +1000
+Processing by WeeksController#last as HTML
+  [1m[36mWeek Load (0.5ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`id` DESC LIMIT 1[0m
+  ↳ app/controllers/weeks_controller.rb:32:in `last'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.5ms | Allocations: 682)
+
+
+Started GET "/week/last" for ::1 at 2021-05-16 08:39:55 +1000
+Processing by WeeksController#last as HTML
+  [1m[36mWeek Load (0.4ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`id` DESC LIMIT 1[0m
+  ↳ app/controllers/weeks_controller.rb:32:in `last'
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 682)
+
+
+Started GET "/weeks/index/1" for ::1 at 2021-05-16 08:39:59 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mWeek Load (0.6ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 0[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 86[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 85[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 84[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 83[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 82[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 81[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 29ms (Views: 22.7ms | ActiveRecord: 6.0ms | Allocations: 9904)
+
+
+Started GET "/week/last" for ::1 at 2021-05-16 08:40:00 +1000
+Processing by WeeksController#last as HTML
+  [1m[36mWeek Load (0.5ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`id` DESC LIMIT 1[0m
+  ↳ app/controllers/weeks_controller.rb:32:in `last'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.5ms | Allocations: 682)
+
+
+Started GET "/weeks/index/1" for ::1 at 2021-05-16 08:40:04 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mWeek Load (0.4ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 0[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (7.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 86[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 85[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 84[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 83[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 82[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 81[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 33ms (Views: 21.7ms | ActiveRecord: 10.6ms | Allocations: 9904)
+
+
+Started GET "/week/last" for ::1 at 2021-05-16 08:40:05 +1000
+Processing by WeeksController#last as HTML
+  [1m[36mWeek Load (0.3ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`id` DESC LIMIT 1[0m
+  ↳ app/controllers/weeks_controller.rb:32:in `last'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 682)
+
+
+Started GET "/week/last" for ::1 at 2021-05-16 08:40:30 +1000
+Processing by WeeksController#last as HTML
+  [1m[36mWeek Load (0.6ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`id` DESC LIMIT 1[0m
+  ↳ app/controllers/weeks_controller.rb:32:in `last'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 682)
+
+
+Started GET "/weeks/index/1" for ::1 at 2021-05-16 08:40:34 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mWeek Load (0.5ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 0[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 86[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 85[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 84[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 83[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 82[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 81[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 27ms (Views: 20.0ms | ActiveRecord: 5.5ms | Allocations: 9904)
+
+
+Started GET "/week/last" for ::1 at 2021-05-16 08:40:36 +1000
+Processing by WeeksController#last as HTML
+  [1m[36mWeek Load (0.4ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`id` DESC LIMIT 1[0m
+  ↳ app/controllers/weeks_controller.rb:32:in `last'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 682)
+
+
+Started GET "/week/last" for ::1 at 2021-05-16 08:41:07 +1000
+Processing by WeeksController#last as HTML
+  [1m[36mWeek Load (0.4ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`id` DESC LIMIT 1[0m
+  ↳ app/controllers/weeks_controller.rb:32:in `last'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 682)
+
+
+Started GET "/weeks/index/1" for ::1 at 2021-05-16 08:41:12 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mWeek Load (0.4ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 0[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (1.2ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 86[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 85[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 84[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 83[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 82[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 81[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 28ms (Views: 22.1ms | ActiveRecord: 5.3ms | Allocations: 9903)
+
+
+Started GET "/week/last" for ::1 at 2021-05-16 08:41:13 +1000
+Processing by WeeksController#last as HTML
+  [1m[36mWeek Load (0.6ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`id` DESC LIMIT 1[0m
+  ↳ app/controllers/weeks_controller.rb:32:in `last'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.6ms | Allocations: 682)
+
+
+Started GET "/week/last" for ::1 at 2021-05-16 08:41:25 +1000
+Processing by WeeksController#last as HTML
+  [1m[36mWeek Load (0.3ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`id` DESC LIMIT 1[0m
+  ↳ app/controllers/weeks_controller.rb:32:in `last'
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 682)
+
+
+Started GET "/weeks/index/1" for ::1 at 2021-05-16 08:41:39 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mWeek Load (0.5ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 0[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 86[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 85[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 84[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 83[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 82[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 81[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 23ms (Views: 17.3ms | ActiveRecord: 5.0ms | Allocations: 9903)
+
+
+Started GET "/week/last" for ::1 at 2021-05-16 08:41:41 +1000
+Processing by WeeksController#last as HTML
+  [1m[36mWeek Load (0.5ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`id` DESC LIMIT 1[0m
+  ↳ app/controllers/weeks_controller.rb:32:in `last'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.5ms | Allocations: 682)
+
+
+Started POST "/weeks/create" for ::1 at 2021-05-16 08:41:46 +1000
+Processing by WeeksController#create as HTML
+  Parameters: {"name"=>"A new week", "number"=>10, "week"=>{"number"=>10, "name"=>"A new week"}}
+[31mUnpermitted parameter: :week[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/weeks_controller.rb:10:in `create'
+  [1m[36mWeek Create (1.2ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (10, 'A new week', '2021-05-15 22:41:46.490149', '2021-05-15 22:41:46.490149')[0m
+  ↳ app/controllers/weeks_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/weeks_controller.rb:10:in `create'
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 4.2ms | Allocations: 1893)
+
+
+Started GET "/weeks/index/1" for ::1 at 2021-05-16 08:41:46 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mWeek Load (0.4ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 0[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 87[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 86[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 85[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 84[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 83[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 82[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 25ms (Views: 19.6ms | ActiveRecord: 4.6ms | Allocations: 9790)
+
+
+Started GET "/weeks/index/1" for ::1 at 2021-05-16 08:42:04 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mWeek Load (0.4ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 0[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (6.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 87[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 86[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 85[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 84[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 83[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 82[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 39ms (Views: 27.3ms | ActiveRecord: 10.8ms | Allocations: 9790)
+
+
+Started GET "/weeks/index/2" for ::1 at 2021-05-16 08:42:08 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mWeek Load (0.4ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 6[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 81[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (1.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 80[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 79[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 78[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 77[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 24ms (Views: 18.1ms | ActiveRecord: 5.1ms | Allocations: 8388)
+
+
+Started GET "/weeks/index/1" for ::1 at 2021-05-16 08:42:09 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mWeek Load (0.4ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 0[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (8.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 87[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 86[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 85[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 84[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 83[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 82[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 38ms (Views: 24.9ms | ActiveRecord: 12.6ms | Allocations: 9794)
+
+
+Started GET "/weeks/index/2" for ::1 at 2021-05-16 08:42:11 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mWeek Load (1.1ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 6[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 81[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 80[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 79[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 78[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 77[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 27ms (Views: 17.3ms | ActiveRecord: 8.5ms | Allocations: 8389)
+
+
+Started GET "/weeks/index/1" for ::1 at 2021-05-16 08:42:12 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mWeek Load (0.9ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 0[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 87[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 86[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 85[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 84[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 83[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 82[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 30ms (Views: 20.6ms | ActiveRecord: 8.4ms | Allocations: 9790)
+
+
+Started GET "/weeks/index/1" for ::1 at 2021-05-16 08:42:45 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mWeek Load (0.6ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 0[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 87[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 86[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 85[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 84[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 83[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 82[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 24ms (Views: 18.8ms | ActiveRecord: 4.2ms | Allocations: 9791)
+
+
+Started GET "/week/last" for ::1 at 2021-05-16 08:42:48 +1000
+Processing by WeeksController#last as HTML
+  [1m[36mWeek Load (0.3ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`id` DESC LIMIT 1[0m
+  ↳ app/controllers/weeks_controller.rb:32:in `last'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 682)
+
+
+Started GET "/weeks/index/1" for ::1 at 2021-05-16 08:42:50 +1000
+Processing by WeeksController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mWeek Load (0.4ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`created_at` DESC LIMIT 6 OFFSET 0[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35m (4.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 87[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 86[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 85[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 84[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 83[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `weeks`[0m
+  ↳ app/models/week.rb:5:in `total_pages'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 82[0m
+  ↳ app/controllers/weeks_controller.rb:6:in `index'
+Completed 200 OK in 26ms (Views: 18.6ms | ActiveRecord: 6.6ms | Allocations: 9790)
+
+

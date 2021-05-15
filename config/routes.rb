@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
 
   get 'weeks/index/:page',to: 'weeks#index'
-  get 'weeks/create'
+  post 'weeks/create'
   get 'weeks/show/:id', to: 'weeks#show'
-  get 'weeks/destroy/:id', to: 'weeks#destroy'
+  delete 'weeks/destroy/:id', to: 'weeks#destroy'
+  get 'week/last', to: 'weeks#last'
 
   get 'recipes/index/:page',to: 'recipes#index'
   post 'recipes/create'

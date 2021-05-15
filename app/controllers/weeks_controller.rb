@@ -7,7 +7,7 @@ class WeeksController < ApplicationController
   end
 
   def create
-    recipe = Week.create!(week_params)
+    week = Week.create!(week_params)
     if week
       render json: week
     else
@@ -26,6 +26,11 @@ class WeeksController < ApplicationController
   def destroy
     week&.destroy
     render json: { message: 'Week deleted!' }
+  end
+
+  def last
+    week = Week.last
+    render json: week
   end
 
   private
