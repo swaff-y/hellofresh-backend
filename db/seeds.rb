@@ -7,11 +7,32 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Recipe.destroy_all
+Week.destroy_all
 
-9.times do |i|
-  Recipe.create(
+recipe_array = []
+10.times do |i|
+  recipe = Recipe.create(
     name: "Recipe #{i + 1}",
     ingredients: '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)',
     instruction: 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.'
   )
+  recipe_array.push recipe
 end
+
+week_array=[]
+10.times do |i|
+  week = Week.create(
+    name: "A week name",
+    number: i
+  )
+  week_array.push week
+end
+
+10.times do |i|
+  week_array[i].recipes << recipe_array[i]
+end
+
+
+puts "Testing Weeks >-< Recipes associations:"
+puts "The week '#{ Week.first.name }' has recipes #{Week.first.recipes.pluck(:name).join(", ")}"
+puts "The Recipes #{ Recipe.last.name } has weeks: #{ Recipe.last.weeks.pluck(:name).join(', ') }"
