@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   post 'recipes/create'
   get 'recipes/show/:id', to: 'recipes#show'
   delete 'recipes/destroy/:id', to: 'recipes#destroy'
+  get 'recipes/week/:week_id', to: 'recipes#get_week'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

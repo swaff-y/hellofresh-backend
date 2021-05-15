@@ -4,8 +4,8 @@ class RecipesController < ApplicationController
   def index
     # recipe = Recipe.all.order(created_at: :desc)
     # render json: recipe
-    recipe = Recipe.page(params[:page]).order(created_at: :desc)
-    render json: recipe, methods: ['total_pages']
+    recipes = Recipe.page(params[:page]).order(created_at: :desc)
+    render json: recipes, methods: ['total_pages']
   end
 
   def create
@@ -28,6 +28,11 @@ class RecipesController < ApplicationController
   def destroy
     recipe&.destroy
     render json: { message: 'Recipe deleted!' }
+  end
+
+  def get_week
+    recipes = Week.find(params[:week_id]).recipes.all
+    render json: recipes
   end
 
   private
