@@ -35,6 +35,15 @@ class RecipesController < ApplicationController
     render json: recipes
   end
 
+  def assign_week
+    recipe = Recipe.find(params[:recipe_id])
+    week = Week.find(params[:week_id])
+
+    week.recipes << recipe
+
+    render json: recipe, include: ['weeks']
+  end
+
   private
 
   def recipe_params
