@@ -26547,3 +26547,182 @@ Completed 200 OK in 39ms (Views: 25.3ms | ActiveRecord: 12.6ms | Allocations: 10
   [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`id` DESC LIMIT 1[0m
   [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`id` DESC LIMIT 1[0m
   [1m[35m (0.4ms)[0m  [1m[34mSELECT `weeks`.`name` FROM `weeks` INNER JOIN `recipes_weeks` ON `weeks`.`id` = `recipes_weeks`.`week_id` WHERE `recipes_weeks`.`recipe_id` = 99[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mRecipe Load (14.7ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes`[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (25.2ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 90[0m
+  [1m[36mRecipe Destroy (0.3ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 90[0m
+  [1m[36mTRANSACTION (7.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (2.1ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 91[0m
+  [1m[36mRecipe Destroy (0.9ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 91[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (6.1ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 92[0m
+  [1m[36mRecipe Destroy (0.5ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 92[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (0.3ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 93[0m
+  [1m[36mRecipe Destroy (0.4ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 93[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (7.1ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 94[0m
+  [1m[36mRecipe Destroy (1.3ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 94[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (0.7ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 95[0m
+  [1m[36mRecipe Destroy (0.1ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 95[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (0.9ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 96[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 96[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (1.0ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 97[0m
+  [1m[36mRecipe Destroy (0.9ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 97[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (0.5ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 98[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 98[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (1.0ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 99[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 99[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mWeek Load (0.4ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks`[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (1.1ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 88[0m
+  [1m[36mWeek Destroy (0.8ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 88[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.1ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 89[0m
+  [1m[36mWeek Destroy (0.2ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 89[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.1ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 90[0m
+  [1m[36mWeek Destroy (0.7ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 90[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.1ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 91[0m
+  [1m[36mWeek Destroy (0.9ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 91[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 92[0m
+  [1m[36mWeek Destroy (0.2ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 92[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 93[0m
+  [1m[36mWeek Destroy (8.6ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 93[0m
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.4ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 94[0m
+  [1m[36mWeek Destroy (1.1ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 94[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 95[0m
+  [1m[36mWeek Destroy (1.1ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 95[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.3ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 96[0m
+  [1m[36mWeek Destroy (3.5ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 96[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 97[0m
+  [1m[36mWeek Destroy (0.9ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 97[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (4.1ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Tiramisù', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'Granny Smith apples mixed with brown sugar and butter filling, in a flaky all-butter crust, with ice cream.', '2021-05-16 09:01:33.535780', '2021-05-16 09:01:33.535780')[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (1.4ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Mushroom Risotto', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'Granny Smith apples mixed with brown sugar and butter filling, in a flaky all-butter crust, with ice cream.', '2021-05-16 09:01:33.541845', '2021-05-16 09:01:33.541845')[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Meatballs with Sauce', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'Two buttermilk waffles, topped with whipped cream and maple syrup, a side of two eggs served any style, and your choice of smoked bacon or smoked ham.', '2021-05-16 09:01:33.544794', '2021-05-16 09:01:33.544794')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.8ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Mushroom Risotto', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', '28-day aged 300g USDA Certified Prime Ribeye, rosemary-thyme garlic butter, with choice of two sides.', '2021-05-16 09:01:33.546564', '2021-05-16 09:01:33.546564')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Risotto with Seafood', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'Granny Smith apples mixed with brown sugar and butter filling, in a flaky all-butter crust, with ice cream.', '2021-05-16 09:01:33.548879', '2021-05-16 09:01:33.548879')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('French Toast', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'Fresh parsley, Italian sausage, shallots, garlic, sun-dried tomatoes and mozzarella cheese in an all-butter crust. With a side of mixed fruits.', '2021-05-16 09:01:33.550687', '2021-05-16 09:01:33.550687')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Tuna Sashimi', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'Three egg whites with spinach, mushrooms, caramelized onions, tomatoes and low-fat feta cheese. With herbed quinoa, and your choice of rye or whole-grain toast.', '2021-05-16 09:01:33.552395', '2021-05-16 09:01:33.552395')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Seafood Paella', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'Granny Smith apples mixed with brown sugar and butter filling, in a flaky all-butter crust, with ice cream.', '2021-05-16 09:01:33.554412', '2021-05-16 09:01:33.554412')[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Som Tam', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'Thick slices of French toast bread, brown sugar, half-and-half and vanilla, topped with powdered sugar. With two eggs served any style, and your choice of smoked bacon or smoked ham.', '2021-05-16 09:01:33.557296', '2021-05-16 09:01:33.557296')[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.1ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('Bruschette with Tomato', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'Breaded fried chicken with waffles, and a side of maple syrup.', '2021-05-16 09:01:33.559459', '2021-05-16 09:01:33.559459')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.3ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (0, 'Green Loki', '2021-05-16 09:01:33.561365', '2021-05-16 09:01:33.561365')[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (1.0ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (1, 'Armor', '2021-05-16 09:01:33.563712', '2021-05-16 09:01:33.563712')[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.2ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (2, 'Trickster Spirit', '2021-05-16 09:01:33.566704', '2021-05-16 09:01:33.566704')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.3ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (3, 'Triton', '2021-05-16 09:01:33.568571', '2021-05-16 09:01:33.568571')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.1ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (4, 'Toad Knight', '2021-05-16 09:01:33.570717', '2021-05-16 09:01:33.570717')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.3ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (5, 'Dark Cy-Gor the Hunter', '2021-05-16 09:01:33.572618', '2021-05-16 09:01:33.572618')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.2ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (6, 'Ultra Crystal', '2021-05-16 09:01:33.574761', '2021-05-16 09:01:33.574761')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.3ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (7, 'Warp', '2021-05-16 09:01:33.576662', '2021-05-16 09:01:33.576662')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.2ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (8, 'Mr Sobek', '2021-05-16 09:01:33.578859', '2021-05-16 09:01:33.578859')[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (1.1ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (9, 'Sage Ivy', '2021-05-16 09:01:33.580765', '2021-05-16 09:01:33.580765')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (5.2ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (100, 98)[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (1.0ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (101, 99)[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (0.3ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (102, 100)[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (1.2ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (103, 101)[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (0.4ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (104, 102)[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (1.4ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (105, 103)[0m
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (1.0ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (106, 104)[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (0.6ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (107, 105)[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (0.4ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (108, 106)[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (1.2ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (109, 107)[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mWeek Load (0.2ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`id` ASC LIMIT 1[0m
+  [1m[36mCACHE Week Load (0.0ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `recipes`.`name` FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 98[0m
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`id` DESC LIMIT 1[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `weeks`.`name` FROM `weeks` INNER JOIN `recipes_weeks` ON `weeks`.`id` = `recipes_weeks`.`week_id` WHERE `recipes_weeks`.`recipe_id` = 109[0m
