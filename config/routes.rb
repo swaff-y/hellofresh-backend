@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   get 'weeks/index/:page',to: 'weeks#index'
+  get 'weeks/index/all',to: 'weeks#index_all'
   post 'weeks/create'
   get 'weeks/show/:id', to: 'weeks#show'
   delete 'weeks/destroy/:id', to: 'weeks#destroy'

@@ -6,6 +6,11 @@ class WeeksController < ApplicationController
     render json: week, methods: ['total_pages'], include: ['recipes']
   end
 
+  def index_all
+    weeks = Week.all
+    render json: weeks
+  end
+
   def create
     week = Week.create!(week_params)
     if week
