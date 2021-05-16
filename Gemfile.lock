@@ -173,7 +173,6 @@ DEPENDENCIES
   kaminari
   listen (~> 3.3)
   mysql2 (~> 0.5)
-  pg
   pry-rails
   puma (~> 5.0)
   rack-cors
