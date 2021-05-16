@@ -41,3 +41,4 @@ end
 gem 'pry-rails'
 gem 'rack-cors'
 gem 'kaminari'
+gem 'faker'
