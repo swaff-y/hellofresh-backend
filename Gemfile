@@ -6,6 +6,10 @@ ruby '3.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
 # Use mysql as the database for Active Record
+group :production do
+  gem 'pg'
+  gem 'rails_12factor', '0.0.2'
+end
 gem 'mysql2', '~> 0.5'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
