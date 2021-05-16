@@ -26364,3 +26364,186 @@ Processing by WeeksController#index as HTML
 Completed 200 OK in 39ms (Views: 25.3ms | ActiveRecord: 12.6ms | Allocations: 10581)
 
 
+  [1m[35m (8.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mRecipe Load (6.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes`[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (12.0ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 80[0m
+  [1m[36mRecipe Destroy (6.0ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 80[0m
+  [1m[36mTRANSACTION (11.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (4.5ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 81[0m
+  [1m[36mRecipe Destroy (0.8ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 81[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (1.6ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 82[0m
+  [1m[36mRecipe Destroy (10.4ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 82[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (2.2ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 83[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 83[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (0.8ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 84[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 84[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 85[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 85[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (0.8ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 86[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 86[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (0.8ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 87[0m
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 87[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (2.0ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 88[0m
+  [1m[36mRecipe Destroy (0.3ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 88[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe::HABTM_Weeks Destroy (1.2ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`recipe_id` = 89[0m
+  [1m[36mRecipe Destroy (0.3ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 89[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mWeek Load (4.2ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks`[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.4ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 77[0m
+  [1m[36mWeek Destroy (1.0ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 77[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.3ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 78[0m
+  [1m[36mWeek Destroy (3.9ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 78[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.3ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 79[0m
+  [1m[36mWeek Destroy (1.7ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 79[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.8ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 80[0m
+  [1m[36mWeek Destroy (0.2ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 80[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.7ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 81[0m
+  [1m[36mWeek Destroy (11.0ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 81[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.4ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 82[0m
+  [1m[36mWeek Destroy (3.6ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 82[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.3ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 83[0m
+  [1m[36mWeek Destroy (1.2ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 83[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 84[0m
+  [1m[36mWeek Destroy (1.1ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 84[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 85[0m
+  [1m[36mWeek Destroy (0.2ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 85[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.6ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 86[0m
+  [1m[36mWeek Destroy (1.4ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 86[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Destroy (0.2ms)[0m  [1m[31mDELETE FROM `recipes_weeks` WHERE `recipes_weeks`.`week_id` = 87[0m
+  [1m[36mWeek Destroy (0.8ms)[0m  [1m[31mDELETE FROM `weeks` WHERE `weeks`.`id` = 87[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (3.9ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('AbigailAltenwerth', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-16 08:53:01.890920', '2021-05-16 08:53:01.890920')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('ThanhTowne', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-16 08:53:01.897773', '2021-05-16 08:53:01.897773')[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (1.1ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('MargaritoKuhic', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-16 08:53:01.899484', '2021-05-16 08:53:01.899484')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (23.8ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('DeanneMitchell', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-16 08:53:01.902473', '2021-05-16 08:53:01.902473')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('EugenioCollier', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-16 08:53:01.929260', '2021-05-16 08:53:01.929260')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (8.8ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('JacquieMcGlynn', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-16 08:53:01.933637', '2021-05-16 08:53:01.933637')[0m
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('BritneyMertz', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-16 08:53:01.947058', '2021-05-16 08:53:01.947058')[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.7ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('GemaGreen', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-16 08:53:01.949116', '2021-05-16 08:53:01.949116')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('MichalZieme', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-16 08:53:01.951698', '2021-05-16 08:53:01.951698')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO `recipes` (`name`, `ingredients`, `instruction`, `created_at`, `updated_at`) VALUES ('FredrickaLabadie', '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)', 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.', '2021-05-16 08:53:01.959931', '2021-05-16 08:53:01.959931')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.1ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (0, 'A week name', '2021-05-16 08:53:01.963325', '2021-05-16 08:53:01.963325')[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.1ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (1, 'A week name', '2021-05-16 08:53:01.964910', '2021-05-16 08:53:01.964910')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.2ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (2, 'A week name', '2021-05-16 08:53:01.966463', '2021-05-16 08:53:01.966463')[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.2ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (3, 'A week name', '2021-05-16 08:53:01.967960', '2021-05-16 08:53:01.967960')[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.1ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (4, 'A week name', '2021-05-16 08:53:01.969388', '2021-05-16 08:53:01.969388')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.2ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (5, 'A week name', '2021-05-16 08:53:01.971068', '2021-05-16 08:53:01.971068')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (19.4ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (6, 'A week name', '2021-05-16 08:53:01.972811', '2021-05-16 08:53:01.972811')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.6ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (7, 'A week name', '2021-05-16 08:53:01.994159', '2021-05-16 08:53:01.994159')[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.1ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (8, 'A week name', '2021-05-16 08:53:01.996902', '2021-05-16 08:53:01.996902')[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek Create (0.8ms)[0m  [1m[32mINSERT INTO `weeks` (`number`, `name`, `created_at`, `updated_at`) VALUES (9, 'A week name', '2021-05-16 08:53:01.998302', '2021-05-16 08:53:01.998302')[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (0.2ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (90, 88)[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (0.1ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (91, 89)[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (9.7ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (92, 90)[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (0.3ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (93, 91)[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (0.1ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (94, 92)[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (11.2ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (95, 93)[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (0.1ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (96, 94)[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (0.4ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (97, 95)[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (0.3ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (98, 96)[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWeek::HABTM_Recipes Create (1.3ms)[0m  [1m[32mINSERT INTO `recipes_weeks` (`recipe_id`, `week_id`) VALUES (99, 97)[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mWeek Load (0.2ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`id` ASC LIMIT 1[0m
+  [1m[36mCACHE Week Load (0.0ms)[0m  [1m[34mSELECT `weeks`.* FROM `weeks` ORDER BY `weeks`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `recipes`.`name` FROM `recipes` INNER JOIN `recipes_weeks` ON `recipes`.`id` = `recipes_weeks`.`recipe_id` WHERE `recipes_weeks`.`week_id` = 88[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`id` DESC LIMIT 1[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` ORDER BY `recipes`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `weeks`.`name` FROM `weeks` INNER JOIN `recipes_weeks` ON `weeks`.`id` = `recipes_weeks`.`week_id` WHERE `recipes_weeks`.`recipe_id` = 99[0m
